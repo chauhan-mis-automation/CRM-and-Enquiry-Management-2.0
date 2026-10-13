@@ -1,5 +1,5 @@
 import { useNavigate, useLocation } from 'react-router-dom'
-import casilicaLogo from '../assets/casilica-logo.jpeg'
+import companyLogo from '../assets/logo.jpeg'
 import './Sidebar.css'
 
 const NAV_ITEMS = [
@@ -50,8 +50,8 @@ export default function Sidebar({ user, isOpen, isCollapsed, onClose, onToggleCo
       <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
         <div className="sb-logo">
           <img
-            src={casilicaLogo}
-            alt="Casilica Logo"
+            src={companyLogo}
+            alt="Chauhan MIS Automation Services"
           />
         </div>
 

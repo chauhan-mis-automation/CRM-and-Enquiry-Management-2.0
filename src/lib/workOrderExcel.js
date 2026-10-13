@@ -1,14 +1,14 @@
 // ============================================================
 // WORK ORDER EXCEL GENERATOR (client-side, ExcelJS)
 // Recreates the exact layout used by the old Apps Script
-// generateWorkOrderExcel() function — Casilica logo, green
+// generateWorkOrderExcel() function — company logo, green
 // header bands, dehumidifier rows, sizes box, drawings
 // checklist and signature footer.
 // ============================================================
 
 import ExcelJS from 'exceljs'
 import { saveAs } from 'file-saver'
-import casilicaLogo from '../assets/casilica.jpeg'
+import companyLogo from '../assets/logo.jpeg'
 import { DRAWING_ITEMS } from './workOrderConstants'
 
 const DARK_GREEN = 'FF385623'
@@ -90,12 +90,12 @@ async function buildWorkbook(payload) {
   // white background for logo rows
   for (let r = 1; r <= 2; r++) for (let c = 1; c <= 12; c++) styleCell(ws, r, c, { bg: WHITE, border: false })
 
-  // ── logo (Casilica) ────────────────────────────────────────
+  // ── logo (company) ────────────────────────────────────────
   try {
-    const res = await fetch(casilicaLogo)
+    const res = await fetch(companyLogo)
     const buf = await res.arrayBuffer()
     const imgId = wb.addImage({ buffer: buf, extension: 'jpeg' })
-    ws.addImage(imgId, { tl: { col: 10.05, row: 0.05 }, ext: { width: 150, height: 40 } })
+    ws.addImage(imgId, { tl: { col: 10.05, row: 0.05 }, ext: { width: 52, height: 52 } })
   } catch (e) {
     console.warn('Could not embed logo:', e)
   }

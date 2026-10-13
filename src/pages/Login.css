@@ -69,10 +69,10 @@
 
 .login-logo img {
   display: block;
-  width: 200px;
+  width: 130px;
   height: auto;
   object-fit: contain;
-  margin-right: 120px;
+  border-radius: 50%;
 }
 
 .login-heading {
@@ -220,7 +220,7 @@
   }
 
   .login-logo img {
-    width: 170px;
+    width: 110px;
   }
 
   .login-heading {

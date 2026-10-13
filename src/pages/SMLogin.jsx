@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { supabase } from '../lib/supabaseClient'
 import { useSMAuth } from '../context/SMAuthContext'
-import casilicaLogo from '../assets/casilica-logo.jpeg'
+import companyLogo from '../assets/logo.jpeg'
 import './SMLogin.css'
 
 export default function SMLogin() {
@@ -80,7 +80,7 @@ export default function SMLogin() {
       <div className="sml-box">
         <div className="sml-brand">
           <div className="sml-logo">
-            <img src={casilicaLogo} alt="Casilica" />
+            <img src={companyLogo} alt="Chauhan MIS Automation Services" />
           </div>
           <div>
             <div className="sml-brand-name">Sales and Marketing CRM</div>

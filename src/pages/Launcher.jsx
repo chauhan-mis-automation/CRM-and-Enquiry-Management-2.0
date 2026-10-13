@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import { useSMAuth } from '../context/SMAuthContext'
 import TypewriterText from '../components/TypewriterText'
-import casilicaLogo from '../assets/casilica-logo.jpeg'
+import companyLogo from '../assets/logo.jpeg'
 import './Launcher.css'
 
 export default function Launcher() {
@@ -10,7 +10,7 @@ export default function Launcher() {
   const { user } = useAuth()
   const { smUser } = useSMAuth()
 
-  function openCasilicaCRM() {
+  function openEnquiryCRM() {
     navigate(user ? '/dashboard' : '/login')
   }
 
@@ -26,7 +26,7 @@ export default function Launcher() {
 
       <div className="lp-card-outer">
         <div className="lp-logo-box">
-          <img src={casilicaLogo} alt="Casilica Logo" />
+          <img src={companyLogo} alt="Chauhan MIS Automation Services" />
         </div>
 
         <h1 className="lp-title">
@@ -37,9 +37,9 @@ export default function Launcher() {
         <div className="lp-cards-grid">
           <div className="lp-option-card">
             <div className="lp-option-icon"><i className="fas fa-chart-pie"></i></div>
-            <h2>Casilica CRM</h2>
-            <p>If you want to go to the Casilica CRM &amp; Enquiry Management Dashboard, then click the button below.</p>
-            <button className="lp-open-btn" onClick={openCasilicaCRM}>
+            <h2>Enquiry CRM</h2>
+            <p>If you want to go to the Enquiry CRM &amp; Management Dashboard, then click the button below.</p>
+            <button className="lp-open-btn" onClick={openEnquiryCRM}>
               Open Dashboard <i className="fas fa-arrow-right"></i>
             </button>
           </div>

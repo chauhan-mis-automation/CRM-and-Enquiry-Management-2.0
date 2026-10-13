@@ -83,7 +83,7 @@ export default function EditUserModal({ targetUser, onClose, onSaved }) {
 
       <div className="modal-form-group">
         <label>Username *</label>
-        <input value={username} onChange={e => setUsername(e.target.value)} placeholder="e.g. sales1@casilica.com" />
+        <input value={username} onChange={e => setUsername(e.target.value)} placeholder="e.g. name@company.com" />
       </div>
 
       <div className="modal-form-group">

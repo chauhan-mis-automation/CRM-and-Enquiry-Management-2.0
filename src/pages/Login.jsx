@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { supabase } from '../lib/supabaseClient'
 import { useAuth } from '../context/AuthContext'
-import casilicaLogo from '../assets/casilica-logo.jpeg'
+import companyLogo from '../assets/logo.jpeg'
 import './Login.css'
 
 export default function Login() {
@@ -80,8 +80,8 @@ export default function Login() {
       <div className="login-box">
         <div className="login-logo">
           <img
-            src={casilicaLogo}
-            alt="Casilica CRM Logo"
+            src={companyLogo}
+            alt="Chauhan MIS Automation Services"
           />
         </div>
 

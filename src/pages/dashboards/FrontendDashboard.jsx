@@ -197,9 +197,9 @@ export default function FrontendDashboard({ user }) {
     setQtTasks(qtRows || [])
 
     // ── Sales & Marketing CRM cross-lookup ──────────────────────────
-    // Casilica aur Sales & Marketing CRM ek hi Supabase project use karte hain,
+    // Enquiry CRM aur Sales & Marketing CRM ek hi Supabase project use karte hain,
     // aur same login-email (users.username) dono jagah use hoti hai. Isliye
-    // pehle sm_users mein match karo (email = apna Casilica username), phir
+    // pehle sm_users mein match karo (email = apna Enquiry CRM username), phir
     // uske aaj ke Pending followups (Call/Visit/Meeting) le aao.
     try {
       const { data: smUserRow } = await supabase

@@ -140,7 +140,7 @@ export default function SMAllProjects() {
 
   function stageDetails(p) {
     if (p.project_stage === 'Tender Stage' && p.casilica_approved) {
-      return <span className={`sap-badge ${p.casilica_approved === 'Yes' ? 'good' : 'bad'}`}>Casilica: {p.casilica_approved}</span>
+      return <span className={`sap-badge ${p.casilica_approved === 'Yes' ? 'good' : 'bad'}`}>Chauhan MIS: {p.casilica_approved}</span>
     }
     if (p.project_stage === 'Bidding by Contractors' && (p.bidding_contractors_list || p.bidding_file_name)) {
       return (
@@ -322,7 +322,7 @@ function ProjectDetailModal({ project: p, onClose, onEdit }) {
               {p.project_stage || '—'}
             </span>
           </div>
-          {p.casilica_approved && <div className="sap-line-sub">Casilica Approved: <strong>{p.casilica_approved}</strong></div>}
+          {p.casilica_approved && <div className="sap-line-sub">Chauhan MIS Approved: <strong>{p.casilica_approved}</strong></div>}
           {p.enquiry_from_consultant && <div className="sap-line-sub">Enquiry (Consultant): <strong>{p.enquiry_from_consultant}</strong></div>}
           {p.enquiry_from_contractor && <div className="sap-line-sub">Enquiry (Contractor): <strong>{p.enquiry_from_contractor}</strong></div>}
           {p.make_list_file_url && (

@@ -1,6 +1,6 @@
 import { useNavigate, useLocation } from 'react-router-dom'
 import { useSMAuth } from '../context/SMAuthContext'
-import casilicaLogo from '../assets/casilica-logo.jpeg'
+import companyLogo from '../assets/logo.jpeg'
 import './SMSidebar.css'
 
 const NAV_ITEMS = [
@@ -54,7 +54,7 @@ export default function SMSidebar({ isOpen, onClose, isCollapsed, onToggleCollap
 
       <aside className={`sm-sidebar ${isOpen ? 'open' : ''} ${isCollapsed ? 'collapsed' : ''}`}>
         <div className="sms-brand">
-          <img src={casilicaLogo} alt="Casilica" className="sms-brand-logo" />
+          <img src={companyLogo} alt="Chauhan MIS Automation Services" className="sms-brand-logo" />
           <div className="sms-brand-text">
             <div className="sms-brand-name">Sales &amp; Marketing</div>
             <div className="sms-brand-tag">PRO CRM</div>

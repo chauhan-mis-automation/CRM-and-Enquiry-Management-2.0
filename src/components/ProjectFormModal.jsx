@@ -341,7 +341,7 @@ export default function ProjectFormModal({ project, onClose, onSaved }) {
       {form.projectStage === 'Tender Stage' && (
         <div className="pfm-conditional-box">
           <div className="modal-form-group" style={{ marginBottom: form.casilicaApproved === 'Yes' ? 10 : 0 }}>
-            <label>Casilica Approved?</label>
+            <label>Chauhan MIS Approved?</label>
             <select value={form.casilicaApproved} onChange={e => updateField('casilicaApproved', e.target.value)}>
               <option value="">-- Select --</option>
               <option value="Yes">Yes</option>
